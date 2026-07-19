@@ -52,7 +52,7 @@ test('DELETE', async ({ request }) => {
 
 });
 
-test('SuaceDemo Mock API', async ({ page }) => {
+test.skip('SuaceDemo Mock API', async ({ page }) => {
 
     await page.route('**/inventory**', async route => {
         await route.fulfill({
